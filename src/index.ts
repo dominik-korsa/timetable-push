@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import Fastify from 'fastify';
 import FastifyCors from '@fastify/cors';
 import {fetchSubstitutionChanges} from "./data";

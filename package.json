@@ -25,6 +25,7 @@
     "@fastify/cors": "^8.2.1",
     "@js-temporal/polyfill": "^0.4.3",
     "@sinclair/typebox": "^0.27.8",
+    "dotenv": "^16.0.3",
     "fastify": "^4.15.0",
     "got": "^12.6.0",
     "node-cron": "^3.0.2",
