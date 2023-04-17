@@ -1,0 +1,33 @@
+{
+  "name": "timetable-push",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "del-cli dist/ && tsc",
+    "start": "node --experimental-specifier-resolution=node .",
+    "start:ts-node": "ts-node --esm --experimental-specifier-resolution=node src/index.ts"
+  },
+  "author": "Dominik Korsa <dominik.korsa@gmail.com> (https://github.com/dominik-korsa)",
+  "license": "MIT",
+  "private": "true",
+  "type": "module",
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.2",
+    "@types/node": "^18.15.11",
+    "@types/node-cron": "^3.0.7",
+    "@types/web-push": "^3.3.2",
+    "del-cli": "^5.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@fastify/cors": "^8.2.1",
+    "@js-temporal/polyfill": "^0.4.3",
+    "@sinclair/typebox": "^0.27.8",
+    "fastify": "^4.15.0",
+    "got": "^12.6.0",
+    "node-cron": "^3.0.2",
+    "web-push": "^3.5.0"
+  }
+}
