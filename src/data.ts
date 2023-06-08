@@ -16,7 +16,8 @@ function clearOutdated() {
 }
 
 function getClassList(): Promise<string[]> {
-  return got.get('https://api.cld.sh/v1/vlo/listclass').json<string[]>();
+  return got.get('https://static.dk-gl.eu/v1/vlo/listclass').json<string[]>();
+  // return got.get('https://api.cld.sh/v1/vlo/listclass').json<string[]>();
 }
 
 async function fetchClassSubstitutions(classId: string, date: Temporal.PlainDate): Promise<string | undefined> {

@@ -57,6 +57,8 @@ async function start() {
     host: '0.0.0.0',
   });
 
+  setTimeout(check, 5000);
+
   cron.schedule(config.checkCron, () => {
     check().catch((error) => {
       fastify.log.error('Error checking for substitutions changes');
