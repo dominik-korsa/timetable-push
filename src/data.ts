@@ -17,12 +17,11 @@ function clearOutdated() {
 
 function getClassList(): Promise<string[]> {
   return got.get('https://static.dk-gl.eu/v1/vlo/listclass').json<string[]>();
-  // return got.get('https://api.cld.sh/v1/vlo/listclass').json<string[]>();
 }
 
 async function fetchClassSubstitutions(classId: string, date: Temporal.PlainDate): Promise<string | undefined> {
   let response: unknown[];
-  response = await got.get('https://api.cld.sh/v2/substitutions', {
+  response = await got.get('https://vlott.dk-gl.eu/v2/substitutions', {
     searchParams: {
       date: date.toString(),
       classid: classId,
