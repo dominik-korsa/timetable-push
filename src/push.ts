@@ -1,7 +1,7 @@
 import webpush, {WebPushError} from "web-push";
-import config from "./config";
-import {NotificationBody} from "./types";
-import {getRegistrations, removeRegistrations} from "./database";
+import config from "./config.js";
+import {NotificationBody} from "./types.js";
+import {getRegistrations, removeRegistrations} from "./database.js";
 
 webpush.setVapidDetails(
   config.vapidSubject,

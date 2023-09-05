@@ -1,12 +1,12 @@
 import 'dotenv/config';
 import Fastify from 'fastify';
 import FastifyCors from '@fastify/cors';
-import {fetchSubstitutionChanges} from "./data";
+import {fetchSubstitutionChanges} from "./data.js";
 import cron from 'node-cron';
-import config from "./config";
-import {put} from "./database";
-import {RegisterBody, registerBodySchema} from "./schema";
-import {pushToAll} from "./push";
+import config from "./config.js";
+import {put} from "./database.js";
+import {RegisterBody, registerBodySchema} from "./schema.js";
+import {pushToAll} from "./push.js";
 
 const fastify = Fastify({ logger: true });
 

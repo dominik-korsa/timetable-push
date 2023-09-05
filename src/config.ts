@@ -1,4 +1,4 @@
-import {requireEnv} from "./utils";
+import {requireEnv} from "./utils.js";
 
 const config = {
   port: parseInt(requireEnv('PORT')),

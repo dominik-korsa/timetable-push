@@ -1,7 +1,7 @@
 import {Temporal} from "@js-temporal/polyfill";
 import got from "got";
 import crypto from 'crypto';
-import {dateRange, DefaultsMap, nextSchoolDay, notNull} from "./utils";
+import {dateRange, DefaultsMap, nextSchoolDay, notNull} from "./utils.js";
 
 const timezone = 'Europe/Warsaw';
 
